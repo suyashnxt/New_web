@@ -29,14 +29,7 @@ const greeting = {
 };
 
 const socialMediaLinks = [
-  /* Your Social Media Link */
-  // github: "https://github.com/ashutosh1919",
-  // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-  // gmail: "ashutoshhathidara98@gmail.com",
-  // gitlab: "https://gitlab.com/ashutoshhathidara98",
-  // facebook: "https://www.facebook.com/laymanbrother.19/",
-  // twitter: "https://twitter.com/ashutosh_1919",
-  // instagram: "https://www.instagram.com/layman_brother/"
+  
 
   {
     name: "Github",
@@ -78,14 +71,14 @@ const skills = {
       softwareSkills: [
         {
           skillName: "Terraform",
-          fontAwesomeClassname: "logos-tensorflow",
+          fontAwesomeClassname: "devicon:terraform-wordmark",
           style: {
             backgroundColor: "transparent",
           },
         },
         {
           skillName: "Docker",
-          fontAwesomeClassname: "simple-icons:keras",
+          fontAwesomeClassname: "devicon:docker-wordmark",
           style: {
             backgroundColor: "white",
             color: "#D00000",
@@ -93,7 +86,7 @@ const skills = {
         },
         {
           skillName: "Kubernetes",
-          fontAwesomeClassname: "logos-pytorch",
+          fontAwesomeClassname: "skill-icons:kubernetes",
           style: {
             backgroundColor: "transparent",
           },
@@ -108,7 +101,11 @@ const skills = {
         },
         {
           skillName: "Ansible",
-          imageSrc: "deeplearning_ai_logo.png",
+          fontAwesomeClassname: "logos:ansible",
+          style: {
+            backgroundColor: "transparent",
+            color: "#3776AB",
+          },
         },
       ],
     },
@@ -192,14 +189,14 @@ const skills = {
       softwareSkills: [
         {
           skillName: "Java",
-          fontAwesomeClassname: "simple-icons:adobexd",
+          fontAwesomeClassname: "logos:java",
           style: {
             color: "#FF2BC2",
           },
         },
         {
           skillName: "Android Studio",
-          fontAwesomeClassname: "simple-icons:figma",
+          fontAwesomeClassname: "skill-icons:androidstudio-light",
           style: {
             color: "#F24E1E",
           },
@@ -217,6 +214,26 @@ const skills = {
 };
 
 // Education Page
+const competitiveSites = {
+  competitiveSites: [
+    {
+      siteName: "LeetCode",
+      iconifyClassname: "simple-icons:leetcode",
+      style: {
+        color: "#F79F1B",
+      },
+      profileLink: "https://leetcode.com/",
+    },
+    {
+      siteName: "HackerRank",
+      iconifyClassname: "simple-icons:hackerrank",
+      style: {
+        color: "#2EC866",
+      },
+      profileLink: "https://www.hackerrank.com",
+    }, 
+  ],
+};
 
 const degrees = {
   degrees: [
@@ -285,7 +302,7 @@ const certifications = {
     {
       title: "Microservices with Spring Boot and Spring Cloud",
       subtitle: "- in28minutes, Udemy",
-      logo_path: "ibm_logo.png",
+      logo_path: "microservices_logo.png",
       certificate_link:
         "https://drive.google.com/file/d/1SwH0WytKBx8qFuNJwf6cHayi62xzMs1g/view?usp=sharing",
       alt_name: "Udemy",
@@ -294,7 +311,7 @@ const certifications = {
     {
       title: "Data Dog",
       subtitle: "- Vaga Notes",
-      logo_path: "google_logo.png",
+      logo_path: "datadog_logo.png",
       certificate_link:
         "https://drive.google.com/file/d/1sfKSgOQVdiZCtHdJLiW9iYHSLWZeB8_X/view?usp=sharing",
       alt_name: "Udemy",
@@ -303,7 +320,7 @@ const certifications = {
     {
       title: "Docker",
       subtitle: "- Kodekloud",
-      logo_path: "deeplearning_ai_logo.png",
+      logo_path: "docker_logo.png",
       certificate_link:
         "https://drive.google.com/file/d/1S5OhUC0sA2Gbg_eixn3GBtJ0AeJcbaAE/view?usp=sharing",
       alt_name: "Udemy",
@@ -312,7 +329,7 @@ const certifications = {
     {
       title: "Kubernetes",
       subtitle: "- Jogesh Muppala",
-      logo_path: "coursera_logo.png",
+      logo_path: "kubernetes_logo.png",
       certificate_link:
         "https://drive.google.com/file/d/1XxetYjqllyHd7MSdW1wKsQr12n7ZNuep/view?usp=sharing",
       alt_name: "Udemy",
@@ -337,7 +354,7 @@ const experience = {
           title: "Senior Software Engineer",
           company: "TELUS International",
           company_url: "https://www.telusinternational.com/",
-          logo_path: "legato_logo.png",
+          logo_path: "telus_logo.png",
           duration: "December 2022 - present ",
           location: "Remote",
           description:
@@ -348,7 +365,7 @@ const experience = {
           title: "Software Engineer",
           company: "TELUS International",
           company_url: "https://www.telusinternational.com/",
-          logo_path: "muffito_logo.png",
+          logo_path: "telus_logo.png",
           duration: "Jan 2020 - Nov 2022",
           location: "Noida, Uttar Pradesh",
           description:
@@ -359,7 +376,7 @@ const experience = {
           title: "Android Developer",
           company: "Pryce Infotech",
           company_url: "https://www.linkedin.com/in/pryce-infotech-a01a98173/?originalSubdomain=in",
-          logo_path: "freecopy_logo.png",
+          logo_path: "pryce_logo.png",
           duration: "Jun 2018 - Dec 2019",
           location: "Bangalore, Karnataka",
           description:
@@ -375,7 +392,7 @@ const experience = {
           title: "Web Developer",
           company: "Greypad technologies",
           company_url: "https://www.greypad.com",
-          logo_path: "tiktok_logo.png",
+          logo_path: "greypad_logo.png",
           duration: "May 2022 - Aug 2022",
           location: "Bangalore, Karnataka",
           description:
@@ -423,9 +440,9 @@ const projectsHeader = {
 };
 
 const publicationsHeader = {
-  title: "Publications",
+  title: "Research",
   description:
-    "I have worked on and published a few research papers and publications of my own.",
+    "I have worked on few research papers",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -433,43 +450,11 @@ const publications = {
   data: [
     {
       id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
+      name: "Elective Course System Developed Using Fuzzy Logic",
+      createdAt: "2017-03-06T16:26:54Z",
+      description: "Paper Written on Elective Course System Developed Using Fuzzy Logic published in Nectra-17 ",
       url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
-    },
-    {
-      id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
-      name: "Artificial Intelligence Paper",
-      createdAt: "2020-03-06T16:26:54Z",
-      description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+        "https://www.nationalconference.in/event/index.php?id=2076540",
     },
   ],
 };
@@ -478,28 +463,28 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
+    profile_image_path: "animated_suyash.png",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with Devops, Cloud and Opensource Development.",
   },
   blogSection: {
     title: "Blogs",
     subtitle:
       "For individual fundamental empowerment, I like to write powerful lessons that create impact on each of the reader individually to change the core of their character.",
-    link: "https://blogs.ashutoshhathidara.com/",
+    link: "https://blogs.kumarsuyash.com/",
     avatar_image_path: "blogs_image.svg",
   },
   addressSection: {
     title: "Address",
     subtitle:
-      "Ambavadi vas, Kanodar, T.A.-Palanpur, Dist.-Banaskantha, Gujarat - 385520",
-    locality: "Kanodar",
+      "Hi-Tech city, Hyderabad, Telangana - 500084",
+    locality: "Gachibowlir",
     country: "IN",
-    region: "Gujarat",
-    postalCode: "385520",
-    streetAddress: "Ambavadi vas",
+    region: "Hyderabad",
+    postalCode: "500084",
+    streetAddress: "Hi-Tech city",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
+    location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76https://www.google.com/maps/place/HITEC+City,+Hyderabad,+Telangana+500081/@17.4477533,78.3765194,15z/data=!3m1!4b1!4m6!3m5!1s0x3bcb93dc8c5d69df:0x19688beb557fa0ee!8m2!3d17.4434646!4d78.3771953!16zL20vMDdwaDlu?entry=ttu",
   },
   phoneSection: {
     title: "",
