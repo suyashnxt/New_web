@@ -240,7 +240,7 @@ const degrees = {
     {
       title: "Visvesvaraya Technological University",
       subtitle: "B.Tech. in Computer Engineering",
-      logo_path: "iiitk_logo.png",
+      logo_path: "vtu_logo.png",
       duration: "2014 - 2018",
       descriptions: [
         "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, Cloud etc.",
